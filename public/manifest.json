@@ -1,9 +1,10 @@
 {
-    "name": "Food Event",
-    "short_name": "Foodies",
-    "description": "An app that allows you to view upcoming food events.",
+    "name": "Track My Expenses",
+    "short_name": "Budget Track",
     "background_color": "#01579b",
     "theme_color": "#ffffff",
+    "start_url": "",
+    "display": "",
     "icons": [
         {
           "src": "./icons/icon-72x72.png",
