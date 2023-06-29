@@ -1,5 +1,5 @@
 const path = require("path")
-const webpack = require("webpack")
+// const webpack = require("webpack")
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 
 module.exports = {
@@ -12,8 +12,8 @@ module.exports = {
     //     tickets: "./assets/js/tickets.js"
     // },
     // output: {
-    //     filename: "[name].bundle.js",
-    //     path: __dirname + "/dist",
+    //     // filename: "[name].bundle.js",
+    //     path: __dirname + "public/dist",
     //     publicPath: 'production' ? '/food-festival/dist' : _dirname + "/dist"
     // },
     plugins: [
@@ -27,13 +27,13 @@ module.exports = {
             fingerprints: false,
             inject: false,
             icons: [{
-              src: path.resolve("./public/icons/icon-512x512.png"),
+              src: path.resolve("public/icons/icon-512x512.png"),
               sizes: [96, 128, 192, 256, 384, 512],
               destination: path.join("public")
             }]
           })
     ],
-    // mode: 'development',
+    mode: 'development',
     // module: {
     //     rules: [
     //       {
@@ -61,7 +61,7 @@ module.exports = {
     // ,
     // devServer: {
     //     static: {
-    //         directory: path.join(__dirname, '/')
+    //         directory: path.join(__dirname, './public')
     //     },
     //     compress: true,
     //     port: 9000
